@@ -8,8 +8,8 @@ def to_base(num, toBase=2, fromBase=10):
     '''
     num = int(str(num), fromBase)
     out = ''
-    max = int(log(num, toBase)) 
-    for i in reversed(range(max+1)):
+    maximum = int(log(num, toBase)) 
+    for i in reversed(range(maximum+1)):
         digit = num//(toBase**i)
         out += str(digit if digit < 10 else chr(digit + 87))
         num %= toBase**i
